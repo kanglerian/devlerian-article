@@ -1,9 +1,18 @@
 {
   "articles": [
     {
-      "title": "Judul 1",
-      "text": "<p>Bismillaah</p>",
+      "judul": "Dev",
+      "tanggal": "1998-02-26",
+      "kategori": "DevOps",
+      "text": "<p>Bus</p>",
       "id": 1
+    },
+    {
+      "judul": "HTML5",
+      "tanggal": "1998-02-26",
+      "kategori": "DevOps",
+      "text": "<p>Bismillah</p>",
+      "id": 2
     }
   ]
 }

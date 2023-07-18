@@ -1,5 +1,4 @@
 const express = require('express');
-const axios = require('axios');
 const cors = require('cors');
 const app = express();
 const port = 3033;
@@ -22,6 +21,23 @@ app.get('/list', async (req, res) => {
   try {
     return res.status(200).json({
       data: data.articles
+  });
+  } catch (error) {
+    console.log(error);
+  }
+});
+
+app.get('/list/:id', async (req, res) => {
+  try {
+    let hasil = [];
+    const articles = data.articles;
+    articles.forEach(article => {
+      if(article.id == req.params.id){
+        hasil.push(article);
+      }
+    });
+    return res.status(200).json({
+      data: hasil
   });
   } catch (error) {
     console.log(error);
